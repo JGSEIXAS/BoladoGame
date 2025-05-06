@@ -1,12 +1,13 @@
 # 🌈 Bolado — Colorful World Game
 
-[🎥 Assista ao jogo!](https://youtu.be/ZPTJcxwiSbo)
+[🎥 Watch the gameplay!](https://youtu.be/ZPTJcxwiSbo)
 
-**Bolado** é um jogo de mundo colorido onde você joga como um personagem encarregado de trazer cores a um mundo preto e branco. Cuidado com os autoproclamados **"whities"**, que não gostam da transformação colorida! Use o mouse para desviar deles e dar vida ao mundo.
+**Bolado** is a colorful world game where you play as a character tasked with bringing colors to a black and white world. Beware of the self-proclaimed **"whities"** who dislike the colorful transformation! Use your mouse to avoid them and bring life to the world.
 
 ---
 
-## 🗂️ Arquivos e Componentes
+## 🗂️ Files and Components
+
 📂 Bolado/
 ├── main.lua
 ├── 📂 components/
@@ -22,52 +23,53 @@ markdown
 Copiar
 Editar
 
+
 - **`main.lua`**  
-  Ponto de entrada principal do jogo. Gerencia os estados do jogo, as interações do jogador e as atualizações. Responsável pelo loop de gameplay e pelos estados: menu, configurações, jogando, fim de jogo, vitória e créditos.
+  The main entry point of the game. It manages game states, player interactions, and updates. Responsible for the core gameplay loop and managing states: menu, settings, running, ended, win, and credits.
 
 - **`components/Enemy.lua`**  
-  Define a classe *Enemy*, que representa os inimigos do jogo. Contém métodos de movimentação, detecção de colisão e renderização.
+  Defines the *Enemy* class, which represents the antagonists in the game. Contains methods for movement, collision detection, and rendering.
 
 - **`components/Button.lua`**  
-  Define a classe *Button*, que cria botões interativos no jogo. Possui métodos para detectar cliques e executar funções associadas.
+  Defines the *Button* class, responsible for creating interactive buttons. Includes methods for detecting clicks and executing associated functions.
 
 - **`sounds/`**  
-  Contém os arquivos de som para diferentes estados: menu, jogo, vitória e derrota. Esses sons enriquecem a experiência e a ambientação.
+  Contains sound files for various states: menu, gameplay, win, and lose. These sound effects enhance the experience and atmosphere.
 
 ---
 
-## 🎨 Decisões de Design
+## 🎨 Design Choices
 
-- **📦 Estrutura Modular**  
-  O código está organizado em arquivos e pastas separados para melhor legibilidade e manutenção.
+- **📦 Modular Structure**  
+  The code is organized into separate files and folders for better readability and maintainability.
 
-- **🎮 Estados de Jogo**  
-  O fluxo do jogo é controlado por estados (menu, configurações, jogando, etc.) usando a função `changeGameState` para transições suaves.
+- **🎮 Game States**  
+  The game flow is controlled through different states (menu, settings, running, etc.) using the `changeGameState` function for smooth transitions.
 
-- **🖱️ Interação com Botões**  
-  A classe *Button* permite criar e gerenciar botões de forma reutilizável, melhorando a experiência do usuário.
+- **🖱️ Button Interaction**  
+  The *Button* class allows reusable button creation and management, improving the user experience.
 
-- **🎵 Música e Som**  
-  Trilha sonora e efeitos sonoros imersivos variam conforme o estado do jogo, enriquecendo a atmosfera.
-
----
-
-## ▶️ Como Jogar
-
-1. **Execute o jogo com o framework Love2D.**
-2. **No menu do jogo**, você pode:
-   - Iniciar o jogo
-   - Acessar configurações
-   - Ver créditos
-   - Sair do jogo
-3. **Use o mouse** para controlar o personagem e desviar dos *whities*.
-4. **Colete pontos** e avance pelos níveis, enfrentando novos desafios.
-5. **Ganhe o jogo** ao atingir a pontuação necessária ou **perca** se for capturado.
-6. **No menu de configurações**, ajuste o volume, mude a cor do personagem, alterne o modo tela cheia ou retorne ao menu principal.
+- **🎵 Music and Sound**  
+  Background music and sound effects immerse players in the game world, with different tracks for each state.
 
 ---
 
-## 👨‍💻 Créditos
+## ▶️ How to Play
 
-Jogo criado por **Gabriel Seixas**.  
-Obrigado por jogar e por ajudar a colorir o mundo! ✨
+1. **Run the game using the Love2D framework.**
+2. **From the main menu**, you can:
+   - Start the game
+   - Access settings
+   - View credits
+   - Exit the game
+3. **Use your mouse** to control the character and avoid the *whities*.
+4. **Collect points** as you progress and face increasing challenges.
+5. **Win the game** by reaching the target score or **lose** if you get caught.
+6. **In the settings menu**, adjust volume, change the character's skin color, toggle fullscreen mode, or return to the main menu.
+
+---
+
+## 👨‍💻 Credits
+
+This game was created by **Gabriel Seixas**.  
+Thank you for playing and helping bring color to the world! ✨
